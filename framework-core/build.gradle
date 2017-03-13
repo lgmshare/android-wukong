@@ -70,7 +70,7 @@ dependencies {
 // ext is a gradle closure allowing the declaration of global properties
 ext {
     PUBLISH_GROUP_ID = 'com.lgmshare.wukong'
-    PUBLISH_ARTIFACT_ID = 'core'
+    PUBLISH_ARTIFACT_ID = 'wukong-core'
     PUBLISH_VERSION = android.defaultConfig.versionName
 }
 
