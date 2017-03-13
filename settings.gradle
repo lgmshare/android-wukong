@@ -1,0 +1,1 @@
+include ':framework-ui', ':framework-core', ':framework-shareSDK',':app'

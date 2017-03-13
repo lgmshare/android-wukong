@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 注意这里 -->
+
+    <!-- 新增, 要显示 -->
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_launcher"
+        android:title="@string/app_name"
+        android:showAsAction="ifRoom|withText" />
+    <!-- 注意这里 -->
+
+    <!-- 修改, 要显示 -->
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_launcher"
+        android:title="@string/app_name"
+        android:showAsAction="ifRoom|withText" />
+    <!-- 注意这里 -->
+
+    <!-- 丢弃, 要显示 -->
+    <item
+        android:id="@+id/action_discard"
+        android:icon="@drawable/ic_launcher"
+        android:title="@string/app_name"
+        android:showAsAction="ifRoom|withText" />
+    <!-- 注意这里 -->
+
+    <!-- 寻找, 要显示 -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_launcher"
+        android:title="@string/app_name"
+        android:showAsAction="ifRoom|withText" />
+    <!-- 注意这里 -->
+
+    <!-- Settings, 不显示, 按 "MENU" 钮才会看到 -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/app_name"
+        android:showAsAction="never" />
+</menu>

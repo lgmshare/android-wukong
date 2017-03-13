@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+//获取系统时间
+import java.text.SimpleDateFormat
+
+def buildTime() {
+    def df = new SimpleDateFormat("yyyyMMddHHmm")
+    df.setTimeZone(TimeZone.getDefault())
+    return df.format(new Date())
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.lgmshare.wukong"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "2.0"
+        // dex突破65535的限制
+        multiDexEnabled false
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+
+    //应用包签名
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+        release {
+            storeFile file("android.keystore") //签名文件
+            storePassword "android"
+            keyAlias "android.keystore"
+            keyPassword "android"  //签名密码
+        }
+    }
+
+    buildTypes {
+        debug {
+            // No debug config
+        }
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            // 移除无用的resource文件
+            shrinkResources true
+            // 混淆开关
+            minifyEnabled true
+            // Zipalign优化
+            zipAlignEnabled true
+            // 是否打开debuggable开关
+            debuggable false
+            // 是否打开jniDebuggable开关
+            jniDebuggable false
+            // 混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 签名配置
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    //批量打包-渠道
+    productFlavors {
+        baidu {}
+    }
+
+    //全局以渠道名替换渠道key （可单独闭包配置）
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    //lint提示
+    lintOptions {
+        abortOnError false
+        ignoreWarnings true
+    }
+
+    //重命名包名
+    android.applicationVariants.all { variant ->
+        def reset = false;
+        def versionName = defaultConfig.versionName
+        def versionCode = defaultConfig.versionCode
+        if (reset){
+            if (variant.buildType.zipAlignEnabled) {
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "apk/" + variant.name + "-V" + versionName + "-" + versionCode + "-" + buildTime() + ".apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            } else {
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "apk/" + variant.name + "-V" + versionName + "-" + versionCode + "-" + buildTime() + "-unaligned.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.android.support:recyclerview-v7:23.+'
+    compile 'com.android.support:cardview-v7:23.+'
+    compile 'com.lgmshare.wukong:core:1.0'
+}

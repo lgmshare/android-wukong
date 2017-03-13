@@ -1,0 +1,118 @@
+<resources>
+
+    <style name="ts_text_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#80ffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="ts_33_16" parent="@style/ts_text_base">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="ts_33_17" parent="@style/ts_text_base">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="ts_33_18" parent="@style/ts_text_base">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="ts_33_20" parent="@style/ts_text_base">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="ts_33_22" parent="@style/ts_text_base">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="ts_66_10" parent="@style/ts_text_base">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_12" parent="@style/ts_text_base">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_13" parent="@style/ts_text_base">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_14" parent="@style/ts_text_base">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_14_bold" parent="@style/ts_text_base">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="ts_66_15" parent="@style/ts_text_base">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_16" parent="@style/ts_text_base">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_18" parent="@style/ts_text_base">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_66_20" parent="@style/ts_text_base">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="ts_blue_14" parent="@style/ts_text_base">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="ts_blue_16" parent="@style/ts_text_base">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="ts_blue_18" parent="@style/ts_text_base">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="ts_orange_16" parent="@style/ts_text_base">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="ts_orange_18" parent="@style/ts_text_base">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="ts_white_12" parent="@style/ts_text_base">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ts_white_14" parent="@style/ts_text_base">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

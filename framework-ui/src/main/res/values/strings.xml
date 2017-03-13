@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">frameUI</string>
+    <string name="submit">提交</string>
+    <string name="ensure">确定</string>
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="skip">跳过</string>
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+    <string name="back_home">返回首页</string>
+    <string name="sure_exit">确定退出</string>
+    <string name="sure_logout">确定注销</string>
+    <string name="reload">重新加载</string>
+    <string name="loading">加载中...</string>
+    <string name="timeout">超时</string>
+    <string name="save">保存</string>
+    <string name="more">更多</string>
+    <string name="remark">备注</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <!-- Empty LineLayout -->
+    <string name="abs_message_loading">正在加载中…</string>
+    <string name="abs_message_empty">没有数据，看看其他吧！</string>
+    <string name="abs_message_error">网络连接错误</string>
+    <string name="abs_button_loading">取消</string>
+    <string name="abs_button_empty">重试</string>
+    <string name="abs_button_error">重试</string>
+    <!-- 下拉列表 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_refreshing">正在刷新</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开加载</string>
+    <string name="xlistview_footer_hint_loading">正在加载</string>
+    <string name="xlistview_footer_newest_time">1分钟前</string>
+</resources>

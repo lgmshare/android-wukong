@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray_tbborder"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_f5f5f5">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/ts_33_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_transparent_blue_selector"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/cancel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ts_33_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_ensure"
+            style="@style/ts_33_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_transparent_blue_selector"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/ensure"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_height"
+        android:background="@color/gray_bdbdbd" />
+
+    <LinearLayout
+        android:id="@+id/layout_wheelview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.lgmshare.base.widget.wheel.WheelVerticalView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/wheelview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isAllVisible="false"
+            app:itemOffsetPercent="90"
+            app:itemsDimmedAlpha="255"
+            app:itemsPadding="16dp"
+            app:selectionDivider="@color/gray_cecece"
+            app:selectionDividerActiveAlpha="180"
+            app:selectionDividerDimmedAlpha="180"
+            app:visibleItems="5" />
+    </LinearLayout>
+
+</LinearLayout>

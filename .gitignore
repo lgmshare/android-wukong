@@ -1,0 +1,17 @@
+*.iml
+.gradle
+.git
+.idea
+.DS_Store
+/build
+/captures
+/local.properties
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/gradlew
+/gradlew.bat
+/build.gradle
+/app/*.iml
+/framework-core/*.iml
+/framework-ui/*.iml
+/framework-shareSDK/*.iml

@@ -1,0 +1,59 @@
+<resources>
+    <!--***********************常用字号：***************************-->
+    <!--12sp 小字提示-->
+    <!--14sp（桌面端13sp） 正文/按钮文字-->
+    <!--16sp（桌面端15sp） 小标题-->
+    <!--20sp Appbar文字-->
+    <!--24sp 大标题-->
+    <!--34sp/45sp/56sp/112sp 超大号文字-->
+    <!--************************************************************-->
+    <dimen name="ts_12">12sp</dimen>
+    <dimen name="ts_14">14sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="ts_18">18sp</dimen>
+    <dimen name="ts_20">20sp</dimen>
+    <dimen name="ts_22">22sp</dimen>
+    <dimen name="ts_24">24sp</dimen>
+    <dimen name="ts_26">26sp</dimen>
+    <dimen name="ts_28">28sp</dimen>
+    <dimen name="ts_30">30sp</dimen>
+    <dimen name="ts_32">32sp</dimen>
+    <dimen name="ts_34">34sp</dimen>
+    <dimen name="ts_36">36sp</dimen>
+    <dimen name="ts_38">38sp</dimen>
+    <dimen name="ts_40">40sp</dimen>
+    <dimen name="ts_45">45sp</dimen>
+    <dimen name="ts_56">56sp</dimen>
+    <dimen name="ts_112">112sp</dimen>
+    <!--*****************常见的尺寸与距离：************************-->
+    <!--所有可操作元素最小点击区域尺寸：48dp X 48dp。-->
+    <!--栅格系统的最小单位是8dp，一切距离、尺寸都应该是8dp的整数倍。-->
+    <!--顶部状态栏高度：24dp-->
+    <!--Appbar最小高度：56dp-->
+    <!--底部导航栏高度：48dp-->
+    <!--悬浮按钮尺寸：56x56dp/40x40dp-->
+    <!--用户头像尺寸：64x64dp/40x40dp-->
+    <!--小图标点击区域：48x48dp-->
+    <!--侧边抽屉到屏幕右边的距离：56dp-->
+    <!--卡片间距：8dp-->
+    <!--分隔线上下留白：8dp-->
+    <!--大多元素的留白距离：16dp-->
+    <!--屏幕左右对齐基线：16dp-->
+    <!--文字左侧对齐基线：72dp-->
+    <!--************************************************************-->
+    <!-- Action Bar -->
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_title_margin">48.0dp</dimen>
+    <dimen name="actionbar_title_text_size">20sp</dimen>
+    <dimen name="actionbar_button_width">48.0dp</dimen>
+    <dimen name="actionbar_button_padding">2.0dp</dimen>
+    <dimen name="actionbar_button_text_size">14sp</dimen>
+    <dimen name="actionbar_tips_width">18.0dp</dimen>
+    <dimen name="actionbar_tips_height">18.0dp</dimen>
+    <dimen name="actionbar_bottom_line">1.0dp</dimen>
+    <!-- common -->
+    <dimen name="common_line_height">1px</dimen>
+    <dimen name="common_btn_height">40dp</dimen>
+    <dimen name="common_radius">4.0dip</dimen>
+
+</resources>

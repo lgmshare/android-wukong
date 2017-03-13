@@ -1,0 +1,126 @@
+<resources>
+
+    <!-- 通用页面头部 -->
+    <style name="ActionBarBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:background">@color/actionbar_bg</item>
+    </style>
+    <!-- 通用页面头部Title -->
+    <style name="ActionBarTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/actionbar_title_text_size</item>
+        <item name="android:textColor">@color/actionbar_title_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">@dimen/actionbar_title_margin</item>
+        <item name="android:layout_marginRight">@dimen/actionbar_title_margin</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 通用页面头部button -->
+    <style name="ActionBarButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/actionbar_button_text_size</item>
+        <item name="android:textColor">@color/actionbar_button_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/actionbar_button_padding</item>
+        <item name="android:paddingRight">@dimen/actionbar_button_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 弹出框样式 -->
+    <style name="CommonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialog" parent="@style/CommonDialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/PopupAnimationSlide</item>
+    </style>
+
+    <!-- WheelVerticalView进出动画 -->
+    <style name="WheelVerticalViewDialog" parent="@style/CommonDialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/PopupAnimationSlide</item>
+    </style>
+
+    <!-- popupwindow弹出动画 -->
+    <style name="PopupAnimationAtTop" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_disppear</item>
+    </style>
+
+    <!-- popupwindow弹出动画 -->
+    <style name="PopupAnimationSlide" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="CommonButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/common_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/ts_18</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#FF525252</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 统一按钮 直角button -->
+    <style name="CommonButton.RectButton" parent="@style/CommonButton">
+        <item name="android:background">@drawable/btn_orange_selector</item>
+    </style>
+
+    <style name="CommonButton.StateButton" parent="@style/CommonButton">
+        <item name="android:textColor">#ffffff</item>
+        <item name="sbNormalBackgroundColor">#cecece</item>
+        <item name="sbPressedBackgroundColor">#ff500b</item>
+        <item name="sbUnableBackgroundColor">#cecece</item>
+        <item name="sbRadius">@dimen/common_radius</item>
+        <item name="sbRound">true</item>
+    </style>
+
+    <style name="CommonProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/loading</item>
+    </style>
+</resources>

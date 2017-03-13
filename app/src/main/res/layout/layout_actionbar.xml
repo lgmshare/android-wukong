@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/ActionBarBackground"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/ActionBarTitle"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_left_txt"
+        style="@style/ActionBarButton"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_transparent_white_selector"
+        android:text="@string/back"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/btn_left_img"
+        style="@style/ActionBarButton"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_transparent_white_selector"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/btn_back_selector"
+        android:visibility="visible"/>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/actionbar_button_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btn_right_txt"
+            style="@style/ActionBarButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_transparent_white_selector"
+            android:text="@string/ensure"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/btn_right_img"
+            style="@style/ActionBarButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_transparent_white_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_tips_num"
+            style="@style/ts_white_12"
+            android:layout_width="@dimen/actionbar_tips_width"
+            android:layout_height="@dimen/actionbar_tips_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_oval_orange"
+            android:gravity="center"
+            android:text="99"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_line_color"/>
+</RelativeLayout>

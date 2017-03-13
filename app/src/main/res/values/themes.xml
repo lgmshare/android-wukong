@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Base" parent="@android:style/Theme.Holo.Light">
+        <!-- 设置透明属性 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 是否允许背景灰暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 是否允许有标题栏 -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+        <!-- 页面actionbar height -->
+        <item name="android:actionBarSize">@dimen/actionbar_height</item>
+        <!-- 页面背景色 -->
+        <item name="android:windowBackground">@color/common_page_bg</item>
+        <!-- 标签名称 -->
+        <item name="android:label">@string/app_name</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <!-- Application Theme. -->
+    <style name="Theme_Base" parent="AppTheme.Base" />
+
+    <style name="Theme_Base_Light" parent="AppTheme.Base" />
+
+    <style name="Theme_Base_Light_DarkActionBar" parent="AppTheme.Base" />
+
+</resources>

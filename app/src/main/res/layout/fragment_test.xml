@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lgmshare.base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="New Button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="New Button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="New Button" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Thread Dialog" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ts_33_16"
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="之前在做 APP 的时候不太关注这个问题，因为自己在使用其他 APP
+        的时候也会在应用启动的初始有一个黑屏闪过后才会出现应用的欢迎页。
+        直到最近开发过程中发现自己在欢迎页启动的线程由于请求和处理的数据量过大而，
+        导致欢迎页在出现之前界面上会有一个短暂的白色闪屏停留，
+        当然白色闪屏的停留是因为
+         application 的主题样式android:theme=@style/AppTheme
+         使用了 Theme.Light 题导致的，
+         Light 样式的 windowBackground、colorBackground、
+         colorForeground 等属性的值均为
+         light 也就是白色偏亮，所以才会出现白色闪屏。
+         下面是我的 APP 出现白色闪屏时样式引用的代码：" />
+
+    </LinearLayout>
+
+</ScrollView>
